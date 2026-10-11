@@ -1,0 +1,958 @@
+[
+  {
+    "id": "ppo-clip",
+    "question": "本库 PPO 跑分用的 clip epsilon 是多少？",
+    "answer_contains": [
+      "0.2"
+    ],
+    "reads": [
+      "Post-training/ppo.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "lora-ranks",
+    "question": "未量化 LoRA 和 QLoRA 的秩分别是多少？",
+    "answer_contains": [
+      "8",
+      "16"
+    ],
+    "reads": [
+      "Models/lora.md",
+      "Models/qlora.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "alphazero-noise",
+    "question": "国际象棋 AlphaZero 的 Dirichlet 噪声混合权重是多少？",
+    "answer_contains": [
+      "0.25"
+    ],
+    "reads": [
+      "RL/alphazero.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "muzero-atari",
+    "question": "Atari 上 MuZero 主实验每步模拟多少次？",
+    "answer_contains": [
+      "50"
+    ],
+    "reads": [
+      "RL/muzero.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "opsd-shortcut",
+    "question": "OPSD 主实验之后，Wait 概率和长推理准确率分别变成多少？",
+    "answer_contains": [
+      "0.01",
+      "44"
+    ],
+    "reads": [
+      "Post-training/opsd.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "kiln-14",
+    "question": "编号 kiln-14 是一次什么失败？",
+    "answer_contains": [
+      "釉"
+    ],
+    "reads": [
+      "Other/kiln-temperature.md"
+    ],
+    "category": "distract"
+  },
+  {
+    "id": "reopold-floor",
+    "question": "放松蒸馏在收紧阶段把极负优势裁到多少？",
+    "answer_contains": [
+      "-2.0"
+    ],
+    "reads": [
+      "Post-training/reopold.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "on-policy-no-clip",
+    "question": "原始在线蒸馏主实验裁剪负优势吗？裁剪写在哪篇笔记？",
+    "answer_contains": [
+      "没有",
+      "reopold"
+    ],
+    "reads": [
+      "Post-training/on-policy-distillation.md"
+    ],
+    "min_offset": 81,
+    "category": "conflict"
+  },
+  {
+    "id": "grpo-groups",
+    "question": "本库 GRPO 在数学题和代码题上的组大小分别是多少？",
+    "answer_contains": [
+      "8",
+      "4"
+    ],
+    "reads": [
+      "Post-training/grpo.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "grpo-clip-on",
+    "question": "GRPO 打开概率比裁剪的对照叫什么，准确率比默认低多少个点？",
+    "answer_contains": [
+      "grpo-clip-on",
+      "1.5"
+    ],
+    "reads": [
+      "Post-training/grpo.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "sft-checkpoint",
+    "question": "监督微调第 3 个 epoch 结束的检查点叫什么？",
+    "answer_contains": [
+      "sft-ep3"
+    ],
+    "reads": [
+      "Post-training/sft.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "survey-stop",
+    "question": "蒸馏综述建议的停止条件是什么？两个阈值都要满足吗？",
+    "answer_contains": [
+      "0.15",
+      "1.0"
+    ],
+    "reads": [
+      "Post-training/distillation-survey.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "alphazero-go",
+    "question": "围棋 AlphaZero 的 Dirichlet 浓度是多少？",
+    "answer_contains": [
+      "0.03"
+    ],
+    "reads": [
+      "RL/alphazero.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "muzero-chess",
+    "question": "棋类 MuZero 每步模拟多少次？",
+    "answer_contains": [
+      "800"
+    ],
+    "reads": [
+      "RL/muzero.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "gumbel-budget",
+    "question": "Gumbel MuZero 主表每步模拟多少次？16 次的对照叫什么？",
+    "answer_contains": [
+      "4 次",
+      "gumbel-sim-16"
+    ],
+    "reads": [
+      "RL/gumbel-muzero.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "planning-elites",
+    "question": "规划脚本 64 条候选里，精英留下几条？取整方式是什么？",
+    "answer_contains": [
+      "6 条",
+      "截断"
+    ],
+    "reads": [
+      "RL/planning.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "dreamer-vs-plan",
+    "question": "Dreamer 训练时的想象长度，和规划脚本的地平线，分别是多少步？",
+    "answer_contains": [
+      "15",
+      "12"
+    ],
+    "reads": [
+      "World-model/dreamer.md",
+      "RL/planning.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "expert-ratio",
+    "question": "世界模型主运行混入的专家轨迹比例是多少？",
+    "answer_contains": [
+      "10%"
+    ],
+    "reads": [
+      "World-model/experiment-log.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "jepa-momentum",
+    "question": "JEPA 目标编码器的动量是多少？",
+    "answer_contains": [
+      "0.996"
+    ],
+    "reads": [
+      "World-model/jepa.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "teacher-width",
+    "question": "teacher-v3 的模型维度是多少？",
+    "answer_contains": [
+      "6144"
+    ],
+    "reads": [
+      "Models/attention.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "kv-page",
+    "question": "本库 KV cache 的页大小是多少？",
+    "answer_contains": [
+      "16 token"
+    ],
+    "reads": [
+      "Models/kv-cache.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "moe-dense",
+    "question": "混合专家蒸馏出的稠密学生，工具准确率是多少？",
+    "answer_contains": [
+      "78%"
+    ],
+    "reads": [
+      "Models/mixture-of-experts.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "speculative-accept",
+    "question": "推测解码在工具调用数据上的接受率是多少？",
+    "answer_contains": [
+      "0.62"
+    ],
+    "reads": [
+      "Systems/speculative-decoding.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "serving-budgets",
+    "question": "serve-tools 和 serve-reason 的首 token 上限分别是多少毫秒？",
+    "answer_contains": [
+      "400",
+      "800"
+    ],
+    "reads": [
+      "Systems/serving.md"
+    ],
+    "min_offset": 81,
+    "category": "note-qa"
+  },
+  {
+    "id": "serve-int8",
+    "question": "检查点 serve-int8 的工具准确率是多少？",
+    "answer_contains": [
+      "80%"
+    ],
+    "reads": [
+      "Systems/quantization.md"
+    ],
+    "category": "note-qa"
+  },
+  {
+    "id": "railway-gauge",
+    "question": "HO 布局的轨距是多少毫米？",
+    "answer_contains": [
+      "16.5"
+    ],
+    "reads": [
+      "Other/model-railway.md"
+    ],
+    "category": "distract"
+  },
+  {
+    "id": "pdf-list",
+    "category": "glob",
+    "question": "测试库 Papers 目录下有哪些 PDF？列出相对路径。",
+    "answer_contains": [
+      "Papers/clip-objective.pdf",
+      "Papers/gumbel-search.pdf"
+    ],
+    "calls": [
+      "glob"
+    ]
+  },
+  {
+    "id": "pdf-token",
+    "category": "disclose",
+    "question": "打开 Papers/clip-objective.pdf，把第一页里的记号 CLIP-BENCH-TOKEN 原样写出来。这个记号不在 Markdown 笔记里。",
+    "answer_contains": [
+      "CLIP-BENCH-TOKEN"
+    ],
+    "pdfs": [
+      "Papers/clip-objective.pdf"
+    ],
+    "reveals": [
+      "read_pdf"
+    ]
+  },
+  {
+    "id": "pdf-page5",
+    "category": "pdf",
+    "question": "Papers/clip-objective.pdf 里记号 BENCH-EPSILON 后面的数是多少？它不在前四页。",
+    "answer_contains": [
+      "0.17"
+    ],
+    "pdfs": [
+      "Papers/clip-objective.pdf"
+    ],
+    "min_pdf_offset": 5,
+    "reveals": [
+      "read_pdf"
+    ]
+  },
+  {
+    "id": "pdf-gumbel-seed",
+    "category": "disclose",
+    "question": "Papers/gumbel-search.pdf 第一页写的 GUMBEL-BENCH-SEED 是多少？",
+    "answer_contains": [
+      "42"
+    ],
+    "pdfs": [
+      "Papers/gumbel-search.pdf"
+    ],
+    "reveals": [
+      "read_pdf"
+    ]
+  },
+  {
+    "id": "insert-pad",
+    "category": "write",
+    "question": "打开 Other/bench-pad.md，在写着 Line B may change. 的那一行之前插入一行：- bench-insert-token。不要改 Line A stays.。",
+    "approve": true,
+    "calls": [
+      "insert_text"
+    ],
+    "writes": {
+      "Other/bench-pad.md": {
+        "contains": [
+          "- bench-insert-token"
+        ],
+        "keeps": [
+          "Line A stays."
+        ]
+      }
+    }
+  },
+  {
+    "id": "insert-pad-declined",
+    "category": "write",
+    "question": "打开 Other/bench-pad.md，在写着 Line B may change. 的那一行之前插入一行：- bench-insert-token。不要改 Line A stays.。",
+    "approve": false,
+    "calls": [
+      "insert_text"
+    ],
+    "unchanged": [
+      "Other/bench-pad.md"
+    ]
+  },
+  {
+    "id": "insert-pad-stale",
+    "category": "write",
+    "question": "打开 Other/bench-pad.md，在写着 Line B may change. 的那一行之前插入一行：- bench-insert-token。不要改 Line A stays.。",
+    "approve": true,
+    "mutate_before_approve": {
+      "Other/bench-pad.md": "# 评测草稿\n\n这篇笔记只给写入评测用，不要把它当成实验数字的来源。\n\nLine A stays.\nLine B was edited in Obsidian.\n"
+    },
+    "calls": [
+      "insert_text"
+    ],
+    "tool_contains": [
+      "changed after the preview"
+    ],
+    "writes": {
+      "Other/bench-pad.md": {
+        "contains": [
+          "Line B was edited in Obsidian."
+        ],
+        "absent": [
+          "- bench-insert-token"
+        ],
+        "keeps": [
+          "Line A stays."
+        ]
+      }
+    }
+  },
+  {
+    "id": "delete-pad-line",
+    "category": "write",
+    "question": "打开 Other/bench-pad.md，删掉整行 Line B may change.。不要改 Line A stays.。",
+    "approve": true,
+    "calls": [
+      "delete_lines"
+    ],
+    "writes": {
+      "Other/bench-pad.md": {
+        "contains": [
+          "Line A stays."
+        ],
+        "absent": [
+          "Line B may change."
+        ]
+      }
+    }
+  },
+  {
+    "id": "create-bench-note",
+    "category": "write",
+    "question": "新建笔记 Other/bench-created.md，全文只要这些行：\n# Bench created\n\nbench-create-token\n",
+    "approve": true,
+    "calls": [
+      "create_note"
+    ],
+    "created": [
+      "Other/bench-created.md"
+    ],
+    "writes": {
+      "Other/bench-created.md": {
+        "contains": [
+          "bench-create-token"
+        ]
+      }
+    }
+  },
+  {
+    "id": "create-bench-declined",
+    "category": "write",
+    "question": "新建笔记 Other/bench-created.md，全文只要这些行：\n# Bench created\n\nbench-create-token\n",
+    "approve": false,
+    "calls": [
+      "create_note"
+    ],
+    "missing": [
+      "Other/bench-created.md"
+    ]
+  },
+  {
+    "id": "ppo-then-path",
+    "category": "multi-turn",
+    "turns": [
+      {
+        "question": "本库 PPO 跑分用的 clip epsilon 是多少？",
+        "answer_contains": [
+          "0.2"
+        ]
+      },
+      {
+        "question": "这个值写在哪篇笔记？给出相对路径。",
+        "answer_contains": [
+          "Post-training/ppo.md"
+        ]
+      }
+    ],
+    "reads": [
+      "Post-training/ppo.md"
+    ],
+    "min_offset": 81
+  },
+  {
+    "id": "lora-then-qlora",
+    "category": "multi-turn",
+    "turns": [
+      {
+        "question": "未量化 LoRA 的秩是多少？",
+        "answer_contains": [
+          "8"
+        ]
+      },
+      {
+        "question": "那 QLoRA 呢？",
+        "answer_contains": [
+          "16"
+        ]
+      }
+    ],
+    "reads": [
+      "Models/lora.md",
+      "Models/qlora.md"
+    ],
+    "min_offset": 81
+  },
+  {
+    "id": "kiln-then-hold",
+    "category": "multi-turn",
+    "turns": [
+      {
+        "question": "编号 kiln-14 是一次什么失败？",
+        "answer_contains": [
+          "釉"
+        ]
+      },
+      {
+        "question": "那一次保温写成了多久？",
+        "answer_contains": [
+          "40"
+        ]
+      }
+    ],
+    "reads": [
+      "Other/kiln-temperature.md"
+    ]
+  },
+  {
+    "id": "dpo-beta",
+    "category": "note-qa",
+    "question": "直接偏好优化的 beta 是多少？",
+    "answer_contains": ["0.1"],
+    "reads": ["Post-training/direct-preference.md"]
+  },
+  {
+    "id": "reward-hack-count",
+    "category": "note-qa",
+    "question": "标成 reward-hack 的样本有多少条？它们来自哪种奖励？",
+    "answer_contains": ["37", "结果奖励"],
+    "reads": ["Post-training/reward-models.md"]
+  },
+  {
+    "id": "mcts-puct",
+    "category": "note-qa",
+    "question": "本库蒙特卡洛树搜索的探索常数 c_puct 是多少？",
+    "answer_contains": ["1.25"],
+    "reads": ["RL/mcts.md"]
+  },
+  {
+    "id": "gae-lambda",
+    "category": "note-qa",
+    "question": "信用分配笔记里 PPO 的 GAE lambda 是多少？",
+    "answer_contains": ["0.95"],
+    "reads": ["RL/credit-assignment.md"]
+  },
+  {
+    "id": "exploit-penalty",
+    "category": "note-qa",
+    "question": "推箱子漏洞修复里，状态不确定度惩罚系数是多少？",
+    "answer_contains": ["0.3"],
+    "reads": ["World-model/planning-failures.md"]
+  },
+  {
+    "id": "breakout-return",
+    "category": "note-qa",
+    "question": "运行 atari-muzero-50 在 Breakout 上的平均回报是多少？",
+    "answer_contains": ["320"],
+    "reads": ["RL/self-play-log.md"],
+    "min_offset": 81
+  },
+  {
+    "id": "chess-pool",
+    "category": "note-qa",
+    "question": "运行 chess-az-800 的对手池保留最近多少个检查点？",
+    "answer_contains": ["20"],
+    "reads": ["RL/self-play-log.md"],
+    "min_offset": 81
+  },
+  {
+    "id": "review-epochs",
+    "category": "conflict",
+    "question": "审阅者说验证集 81、76、74 是同一次训练的三个 epoch。作者同意吗？",
+    "answer_any": ["不是", "不同意"],
+    "reads": ["Models/review-thread.md"]
+  },
+  {
+    "id": "lab-widths",
+    "category": "conflict",
+    "question": "11 月实验会白板上的 0.1 和 0.3 能不能当作 PPO 的主宽度？",
+    "answer_contains": ["废弃"],
+    "reads": ["Post-training/lab-minutes.md", "Post-training/ppo.md"]
+  },
+  {
+    "id": "loaf-09",
+    "category": "distract",
+    "question": "编号 loaf-09 冷藏了多少小时？",
+    "answer_contains": ["14"],
+    "reads": ["Other/sourdough.md"]
+  },
+  {
+    "id": "cherry-west",
+    "category": "distract",
+    "question": "阳台番茄里，哪个品种更耐西晒？",
+    "answer_contains": ["cherry-a"],
+    "reads": ["Other/balcony-tomatoes.md"]
+  },
+  {
+    "id": "library-key",
+    "category": "distract",
+    "question": "图书馆的钥匙放在哪里？",
+    "answer_contains": ["蓝色盒子"],
+    "reads": ["Other/library-shift.md"]
+  },
+  {
+    "id": "meeting-lr",
+    "category": "absent",
+    "question": "11 月实验会定下学习率了吗？只根据笔记回答。",
+    "answer_contains": ["没有"],
+    "reads": ["Post-training/lab-minutes.md"]
+  },
+  {
+    "id": "bert-absent",
+    "category": "absent",
+    "question": "笔记库里有没有写 BERT 的学习率？没有就明确说没有。",
+    "answer_contains": ["没有"],
+    "calls": ["search_notes"]
+  },
+  {
+    "id": "dpo-vs-ppo",
+    "category": "cross-note",
+    "question": "直接偏好优化的 beta 是多少？它是 PPO 的 clip epsilon 吗？",
+    "answer_contains": ["0.1", "不是"],
+    "reads": ["Post-training/direct-preference.md", "Post-training/ppo.md"]
+  },
+  {
+    "id": "review-three",
+    "category": "cross-note",
+    "question": "81、76、74 这三个准确率分别属于什么？不要把它们写成同一个检查点。",
+    "answer_contains": ["81", "76", "74", "重新量化"],
+    "reads": ["Models/review-thread.md", "Models/qlora.md"]
+  },
+  {
+    "id": "skill-kiln",
+    "category": "skill",
+    "question": "编号 kiln-14 是一次什么失败？先读取笔记问答技能再回答。",
+    "answer_contains": ["釉"],
+    "reads": ["skills/research.md", "Other/kiln-temperature.md"]
+  },
+  {
+    "id": "skill-dpo",
+    "category": "skill",
+    "question": "直接偏好优化的 beta 是多少？先读取笔记问答技能再回答。",
+    "answer_contains": ["0.1"],
+    "reads": ["skills/research.md", "Post-training/direct-preference.md"]
+  },
+  {
+    "id": "clip-to-note",
+    "category": "paper",
+    "question": "把 Papers/clip-objective.pdf 第一页的记号写进新笔记 Other/clip-bench-note.md。正文必须原样包含 CLIP-BENCH-TOKEN。",
+    "approve": true,
+    "calls": ["create_note"],
+    "pdfs": ["Papers/clip-objective.pdf"],
+    "reveals": ["read_pdf"],
+    "created": ["Other/clip-bench-note.md"],
+    "writes": {
+      "Other/clip-bench-note.md": {
+        "contains": ["CLIP-BENCH-TOKEN"]
+      }
+    }
+  },
+  {
+    "id": "other-notes",
+    "category": "glob",
+    "question": "Other 目录下有哪些 Markdown？列出相对路径。",
+    "answer_contains": ["Other/kiln-temperature.md", "Other/sourdough.md", "Other/bench-pad.md"],
+    "calls": ["glob"]
+  },
+  {
+    "id": "loaf-then-cold",
+    "category": "multi-turn",
+    "turns": [
+      {
+        "question": "本周最好的酸种面包编号是什么？",
+        "answer_contains": ["loaf-09"]
+      },
+      {
+        "question": "它冷藏了多少小时？",
+        "answer_contains": ["14"]
+      }
+    ],
+    "reads": ["Other/sourdough.md"]
+  },
+  {
+    "id": "append-pad",
+    "category": "write",
+    "question": "打开 Other/bench-pad.md，在全文最后追加一行 bench-append-token。不要改已有的行。",
+    "approve": true,
+    "calls": ["insert_text"],
+    "writes": {
+      "Other/bench-pad.md": {
+        "contains": ["bench-append-token"],
+        "keeps": ["Line A stays.", "Line B may change."]
+      }
+    }
+  },
+  {
+    "id": "compact-between",
+    "category": "compact",
+    "compact_light": 1,
+    "turns": [
+      {
+        "question": "读 Other/compact-pad.md，标题是什么？",
+        "answer_contains": ["压缩垫片"]
+      },
+      {
+        "question": "这篇笔记的相对路径是什么？",
+        "answer_contains": ["Other/compact-pad.md"]
+      },
+      {
+        "question": "若前面的阅读结果里有「完整结果：」，用 read_file 打开那个路径，读出记号。不要重新 read_note。",
+        "answer_contains": ["COMPACT-TOKEN"]
+      }
+    ],
+    "reads": ["Other/compact-pad.md"],
+    "spilled": true,
+    "reads_spill": true
+  },
+  {
+    "id": "compact-step",
+    "category": "compact",
+    "compact_light": 1,
+    "question": "先用 read_note 阅读 Other/compact-pad.md。读完之后再用 glob 列出 Papers/*.pdf。两步都做完再回答笔记里的记号。如果阅读结果被写成「完整结果：」，用 read_file 打开那个路径，不要重新 read_note。",
+    "answer_contains": ["COMPACT-TOKEN"],
+    "calls": ["read_note", "glob"],
+    "spilled": true,
+    "reads_spill": true
+  },
+  {
+    "id": "link-outgoing",
+    "category": "links",
+    "question": "Links/hub.md 里的维基链接指向库里的哪些笔记？写出解析后的相对路径。还不存在的目标，写出链接里的名字。",
+    "answer_contains": [
+      "Links/link-board.md",
+      "Links/search-budget.md",
+      "Links/selfplay-loop.md",
+      "Links/scoring.md",
+      "对局复盘"
+    ],
+    "calls": ["note_links"],
+    "tool_contains": [
+      "target: Links/link-board.md",
+      "target: Links/search-budget.md",
+      "target: Links/selfplay-loop.md",
+      "target: Links/scoring.md",
+      "not created"
+    ]
+  },
+  {
+    "id": "link-backlinks",
+    "category": "links",
+    "question": "哪些笔记用维基链接指向 Links/link-board.md？写出这些笔记的相对路径。",
+    "answer_contains": [
+      "Links/hub.md",
+      "Links/index.md",
+      "Links/search-budget.md",
+      "Links/selfplay-loop.md"
+    ],
+    "calls": ["note_links"],
+    "tool_contains": [
+      "from: Links/hub.md",
+      "from: Links/index.md",
+      "from: Links/search-budget.md",
+      "from: Links/selfplay-loop.md"
+    ]
+  },
+  {
+    "id": "link-unresolved",
+    "category": "links",
+    "question": "整个笔记库里，哪些维基链接指向还不存在的笔记？写出来源笔记的相对路径，以及链接里的名字。",
+    "answer_contains": ["Links/hub.md", "对局复盘", "Links/index.md", "时间分配"],
+    "calls": ["note_links"],
+    "tool_contains": ["对局复盘", "时间分配", "not created"]
+  },
+  {
+    "id": "session-dossier",
+    "category": "long-run",
+    "compact_light": 1,
+    "turns": [
+      {
+        "question": "读 World-model/reading-roadmap.md。把最小阅读集的四篇名字，以及模拟次数以哪篇笔记的表为准，写进工作区 jobs/session-dossier/plan.md。用 write_file，不要 create_note。回答里写出这四篇和那条相对路径。",
+        "answer_contains": ["Dreamer", "规划失败", "MuZero", "模型预测控制", "RL/self-play-log.md"]
+      },
+      {
+        "question": "若上一问的阅读结果已经变成「完整结果：」，用 read_file 打开那个路径，不要重新 read_note 路线图。从存档确认 JEPA 有没有解码器，把原文里的「没有解码器」补进 jobs/session-dossier/plan.md。write_file 会覆盖整个文件，已经写下的四篇和路径要保留。回答包含没有解码器。",
+        "answer_contains": ["没有解码器"]
+      },
+      {
+        "question": "路线图写明模拟次数不在世界模型笔记里。打开它指向的 RL/self-play-log.md，读到运行 B 和运行 C 的表。把两个运行名、运行 B 的每步模拟次数、运行 C 的 Breakout 回报补进同一份 plan.md，覆盖时保留前面已写的内容。回答两个运行名和那个回报。不要把低预算写成打败了 50 次模拟。",
+        "answer_contains": ["atari-muzero-50", "atari-gumbel-4", "280"]
+      },
+      {
+        "question": "最小阅读集里的规划失败是 World-model/planning-failures.md。读这篇。把重叠了多少像素、地平线从多少减到多少、惩罚系数是不是减半的触发条件，写进新文件 jobs/session-dossier/failures.md。不要改 plan.md。回答像素、减半前后的步数，并说明 0.3 不是触发条件。",
+        "answer_contains": ["像素", "12", "6"]
+      },
+      {
+        "question": "规划失败笔记指向 RL/planning.md 的回退条件。打开那篇的后部表，不要用前面的废弃草稿。把候选条数、地平线、回退策略的名字写进 jobs/session-dossier/control.md。地平线不要写成 Dreamer 的想象长度。回答候选条数和回退策略的名字。",
+        "answer_contains": ["64", "mpc-fallback-bc"]
+      },
+      {
+        "question": "派一个 run_subtask，scope 固定为 jobs/session-dossier/dreamer。task 要求只读 World-model/dreamer.md。第一页没有想象长度，要继续往后读，把随机状态维度、决定性状态维度、想象长度，以及短想象对照的运行名，写进 jobs/session-dossier/dreamer/evidence.md。父任务不要自己读这篇笔记。子任务返回后，用 read_file 打开 jobs/session-dossier/progress.md，回答 status 和那个对照运行名。",
+        "answer_contains": ["ready", "dreamer-h5"]
+      },
+      {
+        "question": "用 read_file 读回 jobs/session-dossier/plan.md、failures.md、control.md 和 jobs/session-dossier/dreamer/evidence.md。若其中一份已经变成「完整结果：」，打开那个存档，不要重新 read_note 笔记库。把三件不同的事写进 jobs/session-dossier/index.md：想象长度、规划地平线、减半后的地平线，以及 dreamer-h5、mpc-fallback-bc、atari-muzero-50、没有解码器。回答里这三件长度和这三个名字都要出现，并写明它们来自这几份工作区文件。",
+        "answer_contains": ["15", "12", "6", "dreamer-h5", "mpc-fallback-bc", "atari-muzero-50", "没有解码器"]
+      }
+    ],
+    "reads": ["RL/self-play-log.md", "RL/planning.md"],
+    "min_offset": 81,
+    "file_reads": [
+      "World-model/reading-roadmap.md",
+      "World-model/planning-failures.md",
+      "jobs/session-dossier/plan.md",
+      "jobs/session-dossier/failures.md",
+      "jobs/session-dossier/control.md",
+      "jobs/session-dossier/progress.md",
+      "jobs/session-dossier/dreamer/evidence.md",
+      "jobs/session-dossier/index.md"
+    ],
+    "calls": ["write_file", "read_file", "run_subtask"],
+    "spilled": true,
+    "reads_spill": true,
+    "writes": {
+      ".assistant/jobs/session-dossier/plan.md": {
+        "contains": ["Dreamer", "RL/self-play-log.md", "没有解码器", "atari-muzero-50", "atari-gumbel-4", "280"]
+      },
+      ".assistant/jobs/session-dossier/failures.md": {
+        "contains": ["像素", "12", "6", "0.3"]
+      },
+      ".assistant/jobs/session-dossier/control.md": {
+        "contains": ["64", "12", "mpc-fallback-bc"]
+      },
+      ".assistant/jobs/session-dossier/dreamer/evidence.md": {
+        "contains": ["32", "256", "15", "dreamer-h5"]
+      },
+      ".assistant/jobs/session-dossier/progress.md": {
+        "contains": ["status: ready", "jobs/session-dossier/dreamer"]
+      },
+      ".assistant/jobs/session-dossier/index.md": {
+        "contains": ["15", "12", "6", "dreamer-h5", "mpc-fallback-bc", "atari-muzero-50", "没有解码器"]
+      }
+    }
+  },
+  {
+    "id": "session-handoff",
+    "category": "long-run",
+    "compact_light": 1,
+    "turns": [
+      {
+        "question": "读 Post-training/lab-minutes.md 的会后更正。把这两条写进工作区 jobs/session-handoff/board.md：白板的 0.1 和 0.3 是废弃草稿；国际象棋的噪声权重看 AlphaZero，不看 PPO。用 write_file，不要 create_note。回答要包含 0.1、0.3 和 AlphaZero。",
+        "answer_contains": ["0.1", "0.3", "AlphaZero"]
+      },
+      {
+        "question": "派一个 run_subtask，scope 固定为 jobs/session-handoff/clip。task 要求只读 Post-training/ppo.md。第一页没有配置表，要继续往后读，把配置表原样写进 jobs/session-handoff/clip/evidence.md。父任务不要自己读这篇笔记。子任务返回后，用 read_file 打开 jobs/session-handoff/progress.md，回答里面的 status，以及证据里每次采样的环境步。",
+        "answer_contains": ["ready", "2048"]
+      },
+      {
+        "question": "若纪要的阅读结果已经变成「完整结果：」，用 read_file 打开那个路径，不要重新 read_note 纪要。纪要指定噪声权重去 AlphaZero。打开 RL/alphazero.md 的后部表，把国际象棋主结果的运行名和 Dirichlet 噪声权重补进 jobs/session-handoff/board.md。覆盖时保留 0.1 和 0.3 是废弃草稿。回答运行名和噪声权重，并说明它不是 PPO 的裁剪宽度。",
+        "answer_contains": ["chess-az-800", "0.25"]
+      },
+      {
+        "question": "纪要写明下界和阶段步数只在放松蒸馏的表里。打开 Post-training/reopold.md 的后部，不要用否决表里的数。把优势下界和探索阶段结束时的检查点名字写进 jobs/session-handoff/bound.md。回答这两个，并说明下界不是 PPO 的裁剪宽度。",
+        "answer_contains": ["-2.0", "reopold-explore-400"]
+      },
+      {
+        "question": "纪要写明 LoRA 与 QLoRA 的秩各自独立。分别打开 Models/lora.md 和 Models/qlora.md 的后部配置，不要用审阅线程里被否定的秩。把两篇的秩、以及各自合并或重新量化后的检查点名字，写进 jobs/session-handoff/ranks.md。回答两个检查点名字。",
+        "answer_contains": ["lora-merged-r8", "qlora-requant"]
+      },
+      {
+        "question": "纪要写明 OPSD 的探针数字在那篇后部，而且结论是失败。打开 Post-training/opsd.md 的后部。把蒸馏后的 Wait 概率、长推理探针的主实验后准确率，以及不计入主表的评分标准组名字，写进 jobs/session-handoff/shortcut.md。回答这三个，并说明这是失败不是提升。",
+        "answer_contains": ["0.01", "44", "opsd-rubric"]
+      },
+      {
+        "question": "用 read_file 读回 jobs/session-handoff/board.md、bound.md、ranks.md、shortcut.md 和 jobs/session-handoff/clip/evidence.md。若其中一份已经变成「完整结果：」，打开那个存档，不要重新 read_note 笔记库。把这五份文件里的运行名或检查点名字和 2048 写进 jobs/session-handoff/index.md，并注明每个数来自哪一份工作区文件。回答里要出现 chess-az-800、reopold-explore-400、lora-merged-r8、opsd-rubric 和 2048。",
+        "answer_contains": ["chess-az-800", "reopold-explore-400", "lora-merged-r8", "opsd-rubric", "2048"]
+      }
+    ],
+    "reads": [
+      "RL/alphazero.md",
+      "Post-training/reopold.md",
+      "Models/lora.md",
+      "Models/qlora.md",
+      "Post-training/opsd.md"
+    ],
+    "min_offset": 81,
+    "file_reads": [
+      "Post-training/lab-minutes.md",
+      "jobs/session-handoff/board.md",
+      "jobs/session-handoff/progress.md",
+      "jobs/session-handoff/clip/evidence.md",
+      "jobs/session-handoff/bound.md",
+      "jobs/session-handoff/ranks.md",
+      "jobs/session-handoff/shortcut.md",
+      "jobs/session-handoff/index.md"
+    ],
+    "calls": ["write_file", "read_file", "run_subtask"],
+    "spilled": true,
+    "reads_spill": true,
+    "writes": {
+      ".assistant/jobs/session-handoff/board.md": {
+        "contains": ["0.1", "0.3", "chess-az-800", "0.25"]
+      },
+      ".assistant/jobs/session-handoff/clip/evidence.md": {
+        "contains": ["0.2", "每次采样的环境步", "2048"]
+      },
+      ".assistant/jobs/session-handoff/progress.md": {
+        "contains": ["status: ready", "jobs/session-handoff/clip"]
+      },
+      ".assistant/jobs/session-handoff/bound.md": {
+        "contains": ["-2.0", "reopold-explore-400"]
+      },
+      ".assistant/jobs/session-handoff/ranks.md": {
+        "contains": ["lora-merged-r8", "qlora-requant", "bfloat16", "NF4", "16"]
+      },
+      ".assistant/jobs/session-handoff/shortcut.md": {
+        "contains": ["0.01", "44", "opsd-rubric"]
+      },
+      ".assistant/jobs/session-handoff/index.md": {
+        "contains": ["chess-az-800", "reopold-explore-400", "lora-merged-r8", "opsd-rubric", "2048"]
+      }
+    }
+  }
+]

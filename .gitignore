@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Secrets
+.env
+
+# Local runtime overrides. See settings.example.toml.
+settings.toml
+
+# Virtual environments
+.venv
+
+# Test cache
+.pytest_cache/
+
+.workspace/
+.vault
+tests/
+scripts/
+benchmark/test_vault/
+
+uv.lock
